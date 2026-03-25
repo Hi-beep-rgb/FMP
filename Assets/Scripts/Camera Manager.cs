@@ -12,8 +12,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private MouseSensitivity mouseSensitivty;
     [SerializeField] private CameraAngle cameraAngle;
     private CameraRotation cameraRotation;
-    /*[SerializeField] private float smoothTime;
-    private Vector3 currentVelocity = Vector3.zero;*/
+    /*[SerializeField] private float smoothTime;*/
 
     private void Awake()
     {
@@ -27,8 +26,8 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        cameraRotation.Yaw += input.x * mouseSensitivty.horizontal * Time.deltaTime;
-        cameraRotation.Pitch += input.y * mouseSensitivty.vertical * Time.deltaTime;
+        cameraRotation.Yaw += input.x * mouseSensitivty.horizontal * BoolToInt(mouseSensitivty.invertHorizontal) * Time.deltaTime;
+        cameraRotation.Pitch += input.y * mouseSensitivty.vertical * BoolToInt(mouseSensitivty.invertVertical) * Time.deltaTime;
         cameraRotation.Pitch = Mathf.Clamp(cameraRotation.Pitch, cameraAngle.min, cameraAngle.max);
     }
 
@@ -37,6 +36,8 @@ public class CameraManager : MonoBehaviour
         transform.eulerAngles = new Vector3(cameraRotation.Pitch, cameraRotation.Yaw, 0f);
         transform.position = target.position - transform.forward * distanceToPlayer;
     }
+
+    private static int BoolToInt(bool b) => b ? 1 : -1;
 }
 
 [Serializable]
@@ -44,6 +45,8 @@ public struct MouseSensitivity
 {
     public float horizontal;
     public float vertical;
+    public bool invertVertical;
+    public bool invertHorizontal;
 }
 
 public struct CameraRotation

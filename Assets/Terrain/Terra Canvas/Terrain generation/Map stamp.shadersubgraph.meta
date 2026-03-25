@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: be40fccbaf87b9b478cd3fa24f742be4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 60072b568d64c40a485e0fc55012dc9f, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332652
+  packageName: Terra Canvas Lite
+  packageVersion: 1.0
+  assetPath: Assets/Cody Dreams/Terra Canvas/Terrain generation/Map stamp.shadersubgraph
+  uploadId: 820540

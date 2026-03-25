@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7738632cbf0e0c747ae8cc385992ab84
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 089dd7c6510f77642bbe936c5a796b54, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332652
+  packageName: Terra Canvas Lite
+  packageVersion: 1.0
+  assetPath: Assets/Cody Dreams/Terra Canvas/Core/RenderTextureTerrainGenerator.cs
+  uploadId: 820540

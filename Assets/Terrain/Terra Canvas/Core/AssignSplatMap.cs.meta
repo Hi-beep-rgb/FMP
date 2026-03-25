@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 841ea43aeb453554c9e16f80d510c56b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 38f9b315387a2f9469a011353bb7fc40, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332652
+  packageName: Terra Canvas Lite
+  packageVersion: 1.0
+  assetPath: Assets/Cody Dreams/Terra Canvas/Core/AssignSplatMap.cs
+  uploadId: 820540

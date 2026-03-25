@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 466410736625c314d89b411524cb2264
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 9d9937c5d47acb041a62db70da08451e, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332652
+  packageName: Terra Canvas Lite
+  packageVersion: 1.0
+  assetPath: Assets/Cody Dreams/Terra Canvas/Core/SimpleTreeGenerator.cs
+  uploadId: 820540

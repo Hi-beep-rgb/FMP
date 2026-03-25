@@ -14,8 +14,8 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private float gravityMultiplier = 3f;
     private float velocity;
 
-    [SerializeField] private float smoothTime = 0.05f;
-    private float currentVelocity;
+    [SerializeField] private float rotationSpeed = 500f;
+    private Camera mainCamera;
 
     [SerializeField] private float speed;
 
@@ -24,21 +24,14 @@ public class PlayerScript : MonoBehaviour
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
+        mainCamera = Camera.main;
     }
 
     private void Update()
     {
-        ApplyGravity();
         ApplyRotation();
+        ApplyGravity();
         ApplyMovement();
-
-        /*if (input.sqrMagnitude == 0) return;
-
-        var targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; //Rad2Deg = Radience to Degrees
-        var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref currentVelocity, smoothTime);
-        transform.rotation = Quaternion.Euler(0.0f, angle, 0.0f);*/
-
-        /*controller.Move(direction * speed * Time.deltaTime);*/
     }
 
     private void ApplyGravity()
@@ -60,9 +53,10 @@ public class PlayerScript : MonoBehaviour
     {
         if (input.sqrMagnitude == 0) return;
 
-        var targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg; //Rad2Deg = Radience to Degrees
-        var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref currentVelocity, smoothTime);
-        transform.rotation = Quaternion.Euler(0.0f, angle, 0f);
+        direction = Quaternion.Euler(0f, mainCamera.transform.eulerAngles.y, 0f) * new Vector3(input.x, 0f, input.y);
+        var targetRotation = Quaternion.LookRotation(direction, Vector3.up);
+
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
     private void ApplyMovement()
