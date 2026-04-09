@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1360
     height: 677
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 241
     height: 439
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -277,8 +277,8 @@ MonoBehaviour:
     y: 0
     width: 356
     height: 621
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -1075,9 +1075,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 34.79236, y: -233.7427, z: 25.315918}
+    m_Target: {x: -155.60121, y: -148.10216, z: 465.99106}
     speed: 2
-    m_Value: {x: 34.79236, y: -233.7427, z: 25.315918}
+    m_Value: {x: -155.60121, y: -148.10216, z: 465.99106}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1123,13 +1123,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.36926275, y: -0.08316198, z: 0.033272084, w: 0.92503685}
+    m_Target: {x: 0.1660443, y: 0.0032775393, z: -0.00048293994, w: 0.9861489}
     speed: 2
-    m_Value: {x: 0.36924964, y: -0.08315902, z: 0.033270903, w: 0.925004}
+    m_Value: {x: -0.1660443, y: -0.0032775393, z: 0.00048293997, w: -0.98614895}
   m_Size:
-    m_Target: 343.48743
+    m_Target: 485.2314
     speed: 2
-    m_Value: 343.48743
+    m_Value: 485.2314
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1208,7 +1208,7 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -1376
+      - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1540,14 +1540,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 52986
+    - m_Data: 50182
     m_LastClickedID:
-      m_Data: 52986
+      m_Data: 50182
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52986
-    - m_Data: 53324
-    - m_Data: 53394
+    - m_Data: 50182
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -1582,7 +1580,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52986
+    - m_Data: 50182
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
