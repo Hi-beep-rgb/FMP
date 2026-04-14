@@ -68,6 +68,8 @@ public class PlayerScript : MonoBehaviour
     {
         input = context.ReadValue<Vector2>();
         direction = new Vector3(input.x, 0f, input.y);
+
+        Debug.Log("Movement made");
     }
 
     public void Jump(InputAction.CallbackContext context)
