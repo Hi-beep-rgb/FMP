@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     private float gravity = -9.81f;
     [SerializeField] private float gravityMultiplier = 3f;
     private float velocity;
+    public Animator anim;
 
     [SerializeField] private float rotationSpeed = 500f;
     private Camera mainCamera;
