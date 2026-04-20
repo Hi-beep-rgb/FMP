@@ -13,7 +13,6 @@ public class PlayerScript : MonoBehaviour
     private float gravity = -9.81f;
     [SerializeField] private float gravityMultiplier = 3f;
     private float velocity;
-    public Animator anim;
 
     [SerializeField] private float rotationSpeed = 500f;
     private Camera mainCamera;
@@ -70,7 +69,7 @@ public class PlayerScript : MonoBehaviour
         input = context.ReadValue<Vector2>();
         direction = new Vector3(input.x, 0f, input.y);
 
-        Debug.Log("Movement made");
+        /*Debug.Log("Movement made");*/
     }
 
     public void Jump(InputAction.CallbackContext context)
