@@ -8,6 +8,7 @@ public class PlayerScript : MonoBehaviour
     private Vector2 input;
     private CharacterController controller;
     private Vector3 direction;
+    public Animator anim;
 
     //Setting the gravity value
     private float gravity = -9.81f;
@@ -69,7 +70,26 @@ public class PlayerScript : MonoBehaviour
         input = context.ReadValue<Vector2>();
         direction = new Vector3(input.x, 0f, input.y);
 
-        /*Debug.Log("Movement made");*/
+        //Plays the walking animation
+        if(direction.sqrMagnitude > 0.1f || direction.sqrMagnitude < -0.1f)
+        {
+            anim.SetBool("isWalking", true);
+            //AudioManager.instance.Play("Footstep");
+
+            InvokeRepeating(nameof(PlayFootsteps), 0f, 0.8f);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            CancelInvoke(nameof(PlayFootsteps));
+        }
+
+        //Debug.Log("Movement made");
+    }
+
+    void PlayFootsteps()
+    {
+        AudioManager.instance.Play("Footstep");
     }
 
     public void Jump(InputAction.CallbackContext context)

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1918
     height: 980
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 40472
+  controlID: 49
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40473
+  controlID: 50
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 40474
+  controlID: 51
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 340
     height: 649
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -220,15 +220,15 @@ MonoBehaviour:
     height: 649
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 13}
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 4
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1208,39 +1208,18 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -304470
-      - m_Data: -294304
-      - m_Data: -294082
-      - m_Data: -292096
-      - m_Data: -291656
-      - m_Data: -289244
-      - m_Data: -287526
-      - m_Data: -141150
-      - m_Data: -141118
-      - m_Data: -137386
-      - m_Data: -133364
-      - m_Data: -132970
-      - m_Data: -122588
-      - m_Data: -120872
-      - m_Data: -111182
-      - m_Data: -108324
-      - m_Data: -107598
-      - m_Data: -88744
-      - m_Data: -79692
-      - m_Data: -79620
-      - m_Data: -74442
-      - m_Data: -68506
-      - m_Data: -66248
-      - m_Data: -64124
-      - m_Data: -46088
-      - m_Data: -44334
-      - m_Data: -42332
-      - m_Data: -40654
-      - m_Data: -40392
+      - m_Data: -111650
+      - m_Data: -95120
+      - m_Data: -93324
+      - m_Data: -92668
+      - m_Data: -90820
+      - m_Data: -86614
+      - m_Data: -27240
+      - m_Data: -17660
       - m_Data: -1298
-      - m_Data: -12
-      - m_Data: 88206
-      - m_Data: 88240
+      - m_Data: 47954
+      - m_Data: 47994
+      - m_Data: 101584
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1589,7 +1568,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1599,7 +1578,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Year 1\Isaac\Unity Projects\FMP
   m_LockTracker:
@@ -1608,17 +1587,18 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 50196
+    - m_Data: 48888
     m_LastClickedID:
-      m_Data: 50196
+      m_Data: 48888
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50196
-    - m_Data: 50198
-    - m_Data: 67794
-    - m_Data: 68426
-    - m_Data: 68756
-    - m_Data: 70460
+    - m_Data: 48732
+    - m_Data: 48734
+    - m_Data: 48736
+    - m_Data: 48738
+    - m_Data: 48740
+    - m_Data: 48742
+    - m_Data: 48882
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1652,13 +1632,12 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50196
-    - m_Data: 50198
-    - m_Data: 67794
-    - m_Data: 68426
-    - m_Data: 68756
-    - m_Data: 70460
-    - m_Data: 1000000000
+    - m_Data: 48732
+    - m_Data: 48734
+    - m_Data: 48736
+    - m_Data: 48738
+    - m_Data: 48740
+    - m_Data: 48742
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1693,6 +1672,7 @@ MonoBehaviour:
     - m_Data: 64404
     - m_Data: 60472
     - m_Data: 62906
+    - m_Data: 47272
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1843,7 +1823,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: []
     m_LastClickedID:
-      m_Data: 47206
+      m_Data: 47272
     m_ExpandedIDs:
     - m_Data: 1010101010
     m_RenameOverlay:
@@ -1962,7 +1942,7 @@ MonoBehaviour:
       oldMaxSizes: 
       oldSplitSize: 0
     m_HorizontalSplitter:
-      ID: 2032
+      ID: 219
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:
@@ -2036,7 +2016,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 251
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
