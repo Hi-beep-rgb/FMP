@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     private CharacterController controller;
     private Vector3 direction;
     public Animator anim;
+    public float health = 250;
 
     //Setting the gravity value
     private float gravity = -9.81f;

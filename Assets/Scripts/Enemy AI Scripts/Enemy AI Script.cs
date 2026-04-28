@@ -9,7 +9,7 @@ public class EnemyAIScript : MonoBehaviour
 
     public Transform player;
 
-    public float health;
+    public float health = 120;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -84,6 +84,7 @@ public class EnemyAIScript : MonoBehaviour
         if(!alreadyyAttacked)
         {
             ///Attack code here
+            anim.SetBool("isAttacking", true);
 
             alreadyyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenattacks);
@@ -91,6 +92,7 @@ public class EnemyAIScript : MonoBehaviour
     }
     private void ResetAttack()
     {
+        anim.SetBool("isAttacking", false);
         alreadyyAttacked = false;
     }
 
