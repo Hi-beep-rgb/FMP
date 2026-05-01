@@ -28,7 +28,7 @@ public class EnemyAIScript : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Golem").transform;
+        player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
