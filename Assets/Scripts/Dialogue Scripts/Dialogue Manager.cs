@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance;
+
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
@@ -13,7 +15,26 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        // if instance is null, store a reference to this instance
+        if (instance == null)
+        {
+            // a reference does not exist, so store it
+            instance = this;
+        }
+        else
+        {
+            // Another instance of this gameobject has been made so destroy it
+            // as we already have one
+            Destroy(gameObject);
+            return;
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sentences = new Queue<string>();

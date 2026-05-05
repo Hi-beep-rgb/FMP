@@ -75,21 +75,21 @@ public class PlayerScript : MonoBehaviour
         if(direction.sqrMagnitude > 0.1f || direction.sqrMagnitude < -0.1f)
         {
             anim.SetBool("isWalking", true);
-            InvokeRepeating(nameof(PlayFootsteps), 0f, 0.8f);
+            /*InvokeRepeating(nameof(PlayFootsteps), 0f, 0.8f);*/
         }
         else
         {
             anim.SetBool("isWalking", false);
-            CancelInvoke(nameof(PlayFootsteps));
+            /*CancelInvoke(nameof(PlayFootsteps));*/
         }
 
         //Debug.Log("Movement made");
     }
 
-    void PlayFootsteps()
+    /*void PlayFootsteps()
     {
         AudioManager.instance.Play("Footstep");
-    }
+    }*/
 
     /*public void Jump(InputAction.CallbackContext context)
     {
