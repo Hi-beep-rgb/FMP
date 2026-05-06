@@ -9,7 +9,6 @@ public class PlayerScript : MonoBehaviour
     private CharacterController controller;
     private Vector3 direction;
     public Animator anim;
-    public float health = 250;
 
     //Setting the gravity value
     private float gravity = -9.81f;
@@ -47,7 +46,6 @@ public class PlayerScript : MonoBehaviour
             velocity += gravity * gravityMultiplier * Time.deltaTime;
         }
 
-        /*velocity += gravity * gravityMultiplier * Time.deltaTime;*/
         direction.y = velocity;
     }
 
@@ -82,8 +80,6 @@ public class PlayerScript : MonoBehaviour
             anim.SetBool("isWalking", false);
             /*CancelInvoke(nameof(PlayFootsteps));*/
         }
-
-        //Debug.Log("Movement made");
     }
 
     /*void PlayFootsteps()

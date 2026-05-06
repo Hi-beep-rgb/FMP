@@ -9,7 +9,7 @@ public class EnemyAIScript : MonoBehaviour
 
     public Transform player;
 
-    public float health = 120;
+    public float health;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
