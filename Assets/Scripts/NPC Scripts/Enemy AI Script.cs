@@ -3,13 +3,12 @@ using UnityEngine.AI;
 
 public class EnemyAIScript : MonoBehaviour
 {
+    #region Variables: Variables
     public Animator anim;
 
     public NavMeshAgent agent;
 
     public Transform player;
-
-    public float health;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -25,6 +24,8 @@ public class EnemyAIScript : MonoBehaviour
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+
+    #endregion
 
     private void Awake()
     {
@@ -94,17 +95,6 @@ public class EnemyAIScript : MonoBehaviour
     {
         anim.SetBool("isAttacking", false);
         alreadyyAttacked = false;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -5,6 +6,8 @@ using UnityEngine.Rendering;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerScript : MonoBehaviour
 {
+    #region Variables: Movement
+
     private Vector2 input;
     private CharacterController controller;
     private Vector3 direction;
@@ -20,7 +23,11 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private float speed;
 
-    /*[SerializeField] private float jumpPower;*/
+    [SerializeField] private Movement movement;
+
+    [SerializeField] private float jumpPower;
+
+    #endregion
 
     private void Awake()
     {
@@ -61,7 +68,10 @@ public class PlayerScript : MonoBehaviour
 
     private void ApplyMovement()
     {
-        controller.Move(direction * speed * Time.deltaTime);
+        var targetSpeed = movement.isSprinting ? movement.speed * movement.multiplier : movement.speed;
+        movement.currentSpeed = Mathf.MoveTowards(movement.currentSpeed, targetSpeed, movement.acceleration * Time.deltaTime);
+
+        controller.Move(direction * movement.currentSpeed * Time.deltaTime);
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -96,5 +106,37 @@ public class PlayerScript : MonoBehaviour
         velocity += jumpPower;
     }*/
 
+    public void Sprint(InputAction.CallbackContext context)
+    {
+        if(movement.isSprinting = context.started || context.performed)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        anim.SetTrigger("punch");
+    }
+    public void OnHeavyAttack(InputAction.CallbackContext context)
+    {
+        anim.SetTrigger("swing");
+    }
+
     private bool IsGrounded() => controller.isGrounded;
+}
+
+[Serializable]
+public struct Movement
+{
+    public float speed;
+    public float multiplier;
+    public float acceleration;
+
+    [HideInInspector] public bool isSprinting;
+    [HideInInspector] public float currentSpeed;
 }
