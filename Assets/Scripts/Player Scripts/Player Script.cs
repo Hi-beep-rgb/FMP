@@ -29,6 +29,8 @@ public class PlayerScript : MonoBehaviour
 
     #endregion
 
+    public EnemyHealth enemyHealth;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -121,10 +123,12 @@ public class PlayerScript : MonoBehaviour
     public void OnAttack(InputAction.CallbackContext context)
     {
         anim.SetTrigger("punch");
+        enemyHealth.TakeDamage(5);
     }
     public void OnHeavyAttack(InputAction.CallbackContext context)
     {
         anim.SetTrigger("swing");
+        enemyHealth.TakeDamage(15);
     }
 
     private bool IsGrounded() => controller.isGrounded;

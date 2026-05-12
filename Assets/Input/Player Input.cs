@@ -271,6 +271,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""e55388e1-1c56-41ab-b97b-e9fc7c1bd585"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""2483b8ae-60d5-47cc-b17d-049e09fc4f3e"",
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": ""Tap"",
@@ -282,9 +293,31 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""0741ca1e-494c-4570-8b0b-4a995a729486"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""3aae30b4-e53c-48b1-a608-082a4f697cf8"",
                     ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": ""Tap"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HeavyAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62e8eb9a-f81d-411d-a1da-bfc3c3391c61"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""HeavyAttack"",

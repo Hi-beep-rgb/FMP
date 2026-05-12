@@ -27,6 +27,8 @@ public class EnemyAIScript : MonoBehaviour
 
     #endregion
 
+    public Health health;
+
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
@@ -86,6 +88,7 @@ public class EnemyAIScript : MonoBehaviour
         {
             ///Attack code here
             anim.SetBool("isAttacking", true);
+            health.TakeDamage(25);
 
             alreadyyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenattacks);
