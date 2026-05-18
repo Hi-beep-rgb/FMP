@@ -1835,17 +1835,17 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Controls - GamePad
 
-    Right Stick - movement
+    Right Stick - Movement
 
     Left Stick - Camera
 
     Left
-    shoulder Button - hold and click WAS or D to sprint
+    shoulder Button - Hold to sprint
 
-    Right Shoulder Button
-    - perfrom a light attack
+    Right Shoulder Button - Perfrom a light
+    attack
 
-    Right Trigger - perform a heavy attack'
+    Right Trigger - Perform a heavy attack'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3327,17 +3327,17 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Controls - PC
 
-    WASD - movement
+    WASD - Movement
 
-    Camera - Mouse
+    Mouse - Camera angle
 
-    Left Shift
-    - hold and click WAS or D to sprint
+    Left
+    Shift - Hold to sprint
 
-    Q - perfrom a light attack
+    Q - Perfrom a light attack
 
-    Right
-    Mouse Button - perform a heavy attack'
+    Right Mouse Button
+    - Perform a heavy attack'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
