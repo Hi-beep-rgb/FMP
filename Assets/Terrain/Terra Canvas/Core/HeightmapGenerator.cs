@@ -1,3 +1,5 @@
+/*
+
 using UnityEngine;
 using System.IO;
 using UnityEditor;
@@ -192,3 +194,5 @@ namespace CodyDreams.Solutions.TerraCanvas
         }
     }
 }
+
+*/

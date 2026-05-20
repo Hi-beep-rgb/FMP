@@ -1,5 +1,7 @@
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
+
+/*
 
 namespace CodyDreams.Solutions.TerraCanvas
 {
@@ -206,3 +208,5 @@ namespace CodyDreams.Solutions.TerraCanvas
         }
     }
 }
+
+*/
